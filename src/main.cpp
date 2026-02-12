@@ -21,7 +21,7 @@ void loop() {
   // put your main code here, to run repeatedly:
     sensors.update();
 
-    dashboard.setRPM(sensors.getRPM);
+    dashboard.setRPM(sensors.getRPM());
     dashboard.setSpeed(sensors.getSpeed());
 
     dashboard.render();

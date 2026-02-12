@@ -11,7 +11,7 @@ void Sensors::update()
     speed = rpm * 0.02;
 }
 
-int Sensors::getRPM()
+ int Sensors::getRPM()
 {
     return rpm;
 }

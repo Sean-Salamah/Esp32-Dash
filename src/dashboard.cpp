@@ -29,9 +29,9 @@ void Dashboard::render()
 void Dashboard::drawRPMText()
 {
     tft.setTextColor(TFT_GREEN);
-    tft.setTextsize(3);
+    tft.setTextSize(3);
     tft.setCursor(20,80);
-    tft.printf("%f km/h", currentSpeed)
+    tft.printf("%f km/h", currentSpeed);
 }
 
 void Dashboard::drawRPMBar() 
@@ -47,7 +47,7 @@ void Dashboard::drawRPMBar()
 
     tft.drawRect(x, y, barWidth, barHeight, TFT_WHITE);
 
-    uint16_t = TFT_GREEN;
+    uint16_t color = TFT_GREEN;
 
     if (currentRPM > 4000) color = TFT_RED;
     else if (currentRPM > 6000) color = TFT_ORANGE;
